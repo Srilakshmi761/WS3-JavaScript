@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Named Function for Events</title>
+</head>
+<body>
+    <h1>Named Function Demonstration</h1>
+    <p>What is the name(s) of your browser?</p>
+    <button onclick="myFunction()">Try it</button>
+    <p id="demo"></p> 
+    <script>
+        function myFunction() {
+            const msg ='Name is: ' + navigator.appName + '<br>' + ' Code name is ' + navigator.appCodeName;
+            
+            document.getElementById("demo").innerHTML = msg;
+        }
+    </script>
+</body>
+</html>
